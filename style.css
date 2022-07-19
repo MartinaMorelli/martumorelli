@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: end;
+    margin-top: -3%;
+}
+  
+.nav a img{
+    margin-top: 1%;
+}
+
+.nav ul li{
+    width: fit-content;
+    margin: 20px;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+/* empieza index */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url(./imagenes/fotoindex.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+
+.boton1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border: solid 1px black;
+}
+
+.boton1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.portfolio1{
+    display: grid;
+    grid-column:2fr 2fr;
+    grid-row:1/3;
+    grid-template-areas:
+    'aside grid1'
+    'aside grid2'
+    'aside boton2';
+
+}
+
+aside{
+    grid-area: aside;
+}
+
+.grid1{
+    grid-area: grid1;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 180px;
+
+}
+
+.grid2{
+    grid-area:grid2;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.boton2{
+    grid-area: boton2;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border: solid 1px black;
+    margin-left: 550px;
+
+}
+
+.boton2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.servicios{
+    display: grid;
+    grid-column:2fr 2fr;
+    grid-row:1/3;
+    grid-template-areas:
+    'grid3 aside'
+    'grid4 aside'
+    'boton3 aside';
+
+}
+
+aside{
+    grid-area: aside;
+}
+
+.grid3{
+    grid-area: grid3;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 180px;
+
+}
+
+.grid4{
+    grid-area:grid4;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: auto;
+}
+
+.boton3{
+    grid-area: boton3;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border: solid 1px black;
+    margin-left: 550px;
+}
+
+.boton3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+/* fin de index */
+/* empieza portfolio */
+.banner-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image:  url(./imagenes/fotoportfolio.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-portfolio h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+/* empieza servicios */
+
+.banner-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image:  url(./imagenes/fotoservicios.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-servicios h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+/* empieza contacto */
+
+.banner-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image:  url(./imagenes/fotocontacto.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-contacto h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+/* comienza about me */
+.banner-aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    background-image: url(./imagenes/fotoaboutme.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-aboutme h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+.about-me{
+    display: grid;
+     grid-template-columns: 35vh 65vh;
+     justify-content: space-between;
+}
+.about-me p{
+    margin-top: 20px;
+}
+/* empieza footer */
+footer{
+    background-color: grey;
+    width: auto;
+    height: 170px;
+}
+
+.rrss ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+}
+
+.rrss ul li{
+    margin: 10px;
+}
+
+.rrss ul li a img{
+    width: 30px;
+    height:30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+} 
+
+footer h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+/* termina footer */
+
+@media screen and (max-width: 768px) {
+    
+
+.nav ul{
+    flex-direction: column;
+    justify-content: end;
+}
+  
+.nav a img{
+    margin-top: 1%;
+    margin-bottom: 8px;
+}
+
+.nav ul li{
+    width: fit-content;
+    margin: 8px;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+/* empieza index */
+.banner{
+    background-size: cover;
+    height: 100vh;
+}
+
+.boton1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+
+.banner h1 {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: 100;
+}
+
+.boton1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border: solid 1px black;
+}
+
+.boton1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.portfolio1{
+    display: flex;
+    flex-direction: column;
+    grid-column:none;
+    grid-row: none;
+    grid-template-areas:none;
+
+}
+
+
+aside{
+    grid-area: none;
+}
+
+.grid1{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+
+}
+
+.grid2{
+    grid-area:none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.boton2{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+
+}
+
+.boton2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+aside{
+    grid-area: none;
+}
+
+.grid3{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+
+}
+
+.grid4{
+    grid-area:none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.boton3{
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.boton3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+/* fin de index */
+
+.banner-servicios{
+    background-color: white;
+    background-image: url(./imagenes/fotoservicios.jpg);
+    background-size: cover;
+    height: 1000px;
+
+}
+
+.banner-portfolio{
+    background-color: white;
+    background-image: url(./imagenes/fotoportfolio.jpg);
+    background-size: cover;
+    height: 1000px;
+
+}
+
+.banner-contacto{
+    background-color: white;
+    background-image: url(./imagenes/fotocontacto.jpg);
+    background-size: cover;
+    height: 1000px;
+
+}
+
+.banner-aboutme{
+    background-color: white;
+    background-image: url(./imagenes/fotoaboutme.jpg);
+    background-size: cover;
+    height: 1000px;
+
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+     grid-template-columns: none;
+     justify-content: space-between;
+}
+.about-me p{
+    margin-top: 10px;
+}
+
+/* empieza footer */
+footer{
+    background-color: grey;
+    width: auto;
+    height: 170px;
+}
+
+.rrss ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+   
+}
+
+.rrss ul li{
+    margin: 10px;
+}
+
+.rrss ul li a img{
+    width: 30px;
+    height:30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+} 
+
+footer h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+
+}
